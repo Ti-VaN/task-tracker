@@ -14,18 +14,12 @@ import java.time.Instant;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class TaskDto {
 
-    @NotNull
     Long id;
 
-    @NotNull
     String name;
 
-    @NotNull
-    Long ordinal;
-
-    @NotNull
     @JsonProperty("created_at")
-    Instant createAt;
+    Instant createdAt;
 
     String description;
 }

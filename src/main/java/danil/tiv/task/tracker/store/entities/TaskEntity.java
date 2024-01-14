@@ -21,11 +21,10 @@ public class TaskEntity {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     Long id;
 
-    @Column(unique = true)
     String name;
 
     @Builder.Default
-    Instant createAt = Instant.now();
+    Instant createdAt = Instant.now();
 
     String description;
 

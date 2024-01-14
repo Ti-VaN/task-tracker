@@ -22,7 +22,7 @@ public class ProjectDto {
 
     @NotNull
     @JsonProperty("created_at")
-    Instant createAt;
+    Instant createdAt;
 
     @NotNull
     @JsonProperty("updated_at")
